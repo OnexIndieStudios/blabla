@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grand Theft Velenje</title>
+</head>
+<body>
+<center>
+<h1 id="h">Grand Theft Velenje</h1>
+
+
+<a href="zacetek.html" style="color: green;"><h2 id="s">ZAČNI</h2></a>
+
+<br>
+<br>
+<br>
+<br>  
+<br> 
+         
+<input type="field" name="password" class="span7" id="password" placeholder="vpiši checkpoint kodo"/>
+<button class="btn btn-info btn-large span5" id="joe_btn" onclick="onSubmit()"><span>Začni</span></button>
+<br>
+<a href="https://amidev.netlify.app/" id="fl"><h2 id="f" style="color: red;">Avtor: Amar Omerovič</h2></a>
+
+</center>
+<style>
+@font-face {
+  font-family: gta;
+  src: url(gta.ttf);
+}
+
+#h{font-family: gta; color: orange; -webkit-text-stroke: 2px black; font-size: 100px;}
+#s{font-family: gta; -webkit-text-stroke: 2px black; font-size: 100px;}
+#f{font-family: gta; -webkit-text-stroke: 2px black;}
+
+a:link {
+  text-decoration: none;
+}
+
+body {
+  background-image: url('main.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#s:hover {
+ -webkit-text-stroke: 5px black;
+}
+
+#s{display: inline;}
+#f{display: inline;}
+
+#f:hover{font-size: 30px;}
+</style>
+<script>
+function onSubmit() {
+          if (document.getElementById('password').value == 'skip.t') {window.location.href = 'kt.html'; }else{ alert('checkpoint koda ni pravilna!');}
+     }
+</script>
+</body>
+</html>
