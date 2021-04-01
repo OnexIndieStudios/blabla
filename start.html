@@ -54,8 +54,10 @@ body {
 </style>
 <script>
 function onSubmit() {
-          if (document.getElementById('password').value == 'skip.t') {window.location.href = 'kt.html'; }else{ alert('checkpoint koda ni pravilna!');}
-     }
+          if (document.getElementById('password').value == 'skip.t') {window.location.href = 'kt.html'; }
+		  else if (document.getElementById('password').value == 'skip.luk') {window.location.href = 'koncc.html'; }
+	      else{ alert('checkpoint koda ni pravilna!');}
+	 }
 </script>
 </body>
 </html>
